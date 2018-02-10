@@ -1,0 +1,7 @@
+.banner{
+    display: grid;
+    background-image: url("banner.jpeg");
+    background-position: center;
+    width: 100%;
+    
+}
