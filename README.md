@@ -103,4 +103,4 @@ To stop the server, go into the screen and kill it
 
 The app is far from complete. There are a lot of things that could be added that would make it much more useable and finished. Here are our ideas:
 
-[1]: https://git.heroku.com/freshwaterfeed.git
+[1]: https://freshwaterfeed.herokuapp.com/

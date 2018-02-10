@@ -24,9 +24,7 @@ class MainController < ApplicationController
             flash[:alert] = "No spaces were found nearby. Zoom out with the map to find the closest spaces. If you want to learn more about those spaces, perform a new search on that city."
         end
     end
-    
-    def us
-    end
+
     
     def about
     end
