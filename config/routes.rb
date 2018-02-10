@@ -68,6 +68,4 @@ Rails.application.routes.draw do
   get '/about', to: 'main#about', as: 'about'
   get '/users/edit', to: 'users#edit', as: 'edit_user'
   resources :users, :except => [:edit]
-  
-
 end
