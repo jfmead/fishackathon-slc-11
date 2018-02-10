@@ -11,7 +11,7 @@ body{
 .banner{
     display: grid;
     background-image: url("banner.jpeg");
-    opacity: 75%;
+    opacity: .7;
     background-position: center;
     height: 300px;
     background-size: cover;
@@ -20,23 +20,95 @@ body{
 }
 
 .subBanner{
-    height: 300px;
+    height: 40px;
     color: white;
     background-color: #43BAB6;
     grid-column-start: 3;
     grid-column-end: -3;
     margin-top: 20px;
+    padding:10px;
+    opacity: .5;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.socialConditionsboatTraffic{
+    grid-column: 3/-3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(6, 1fr);
+    color: white;
+    background-color: #43BAB6;
+    padding: 20px;
+    opacity: .65;
+}
+.bottomSubBanner{
+    height: 100px;
+    grid-column: 3/-3;
+    color: white;
+    background-color: #43BAB6;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    opacity: .5;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: baseline;
 }
 .bTraffic{
     font-weight: 700;
     color: white;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.bT1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+.bT2{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+.bT3{
+    grid-column-start: 1;
+    grid-row-start: 4;
 }
 .beachCrowd{
-    font-weight: bolder;
+    font-weight: 700;
+    color: white;
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
-
-.subBanner form table tr td input{
-
+.bC1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.bC2{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.bC3{
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+.boat-ramp{
+    font-weight: 700;
+    color: white;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.bR1{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.bR2{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.bR3{
+    grid-column-start: 3;
+    grid-row-start: 4;
 }
 .socialConditionsboatTraffic{
     display: grid;
