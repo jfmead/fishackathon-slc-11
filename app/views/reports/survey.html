@@ -5,122 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fresh Water Feed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="survey.css">
 </head>
 
 <body>
-<div class="conditionWrap">
-    <div class="banner2">
-        <div class="searchBarLakes"></div>
-        <div class="searchBarZip"></div>
-        </div>
-    <div class="conditionWrap">
+
+    <div class="container">
+        <div class="jumbotron"></div>
+
         <h3>Environmental Conditions</h3>
-        <div class="environmentalConditions">
-            <label class="algaeBlooms">Algae Blooms: </label>
-            <label class="bT1"><input type="checkbox" name="algaeBlooms" value="present"> Present</label>
+        <div class="row">
+            <div class="col-lg-4">
+                <input type="checkbox" name="algaeBlooms"> Visible Blooms Present </input>
+                <div class="form-group">
+                    <label class="checkbox surfaceScum">Surface Scum: </label>
+                    <label class="bT1"><input type="checkbox" name="surfaceScum" value="present"> Present</label>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox garbageBuildup">Garbage Buildup: </label>
+                    <label class="bT1"><input type="checkbox" name="garbageBuildup" value="present"> Present</label>
+                </div>
+            </div>
 
-            <label class="surfaceScum">Surface Scum: </label>
-            <label class="bT1"><input type="checkbox" name="surfaceScum" value="present"> Present</label>
+            <div class="col-lg-4">
+                <label class="checkbox visiblePolutants">Visible Polutants: </label>
+                <label class="bT1"><input type="checkbox" name="visiblePolutants" value="present"> Present</label>
 
-            <label class="garbageBuildup">Garbage Buildup: </label>
-            <label class="bT1"><input type="checkbox" name="garbageBuildup" value="present"> Present</label>
+                <label class="checkbox sulferSmells">Sulfer Based Smells: </label>
+                <label class="bT1"><input type="checkbox" name="sulferSmells" value="present"> Present</label>
 
-            <label class="visiblePolutants">Visible Polutants: </label>
-            <label class="bT1"><input type="checkbox" name="visiblePolutants" value="present"> Present</label>
-
-            <label class="sulferSmells">Sulfer Based Smells: </label>
-            <label class="bT1"><input type="checkbox" name="sulferSmells" value="present"> Present</label>
-
-            <label class="otherSmells">Other Smells: </label>
-            <label class="bT1"><input type="checkbox" name="otherSmells" value="present"> Present</label>
+                <label class="checkbox otherSmells">Other Smells: </label>
+                <label class="bT1"><input type="checkbox" name="otherSmells" value="present"> Present</label>
+            </div>
         </div>
-            <button id="submitButton" type="submit">Submit</button>
-            <button id="Clear" type="submit">Clear Form</button>
+        <button class="" id="submitButton" type="submit">Submit</button>
+        <button class="" id="Clear" type="submit">Clear Form</button>
+
+        <div class "col-lg-4">
             <h3>Biological Conditions</h3>
-        <div class="biologicalConditions">
-            <label class="waterTemp">Water Temperature: </label>
+            <label class="form-control waterTemp">Water Temperature: </label>
             <label class="wT1"><input type="text" name="waterTemp" value=""></label>
 
-            <label class="windSpeed">Wind Speed: </label>
+            <label class="form-control windSpeed">Wind Speed: </label>
             <label class="wS1"><input type="text" name="windSpeed" value=""></label>
 
             <label class="waveAction">Wave Action: </label>
-            <label class="wA1"><input type="radio" name="waveAction" value="Calm"> Calm</label>
-            <label class="wA2"><input type="radio" name="waveAction" value="Choppy"> Choppy</label>
-            <label class="wA3"><input type="radio" name="waveAction" value="Hazardous"> Hazardous</label>
+            <label class="radio wA1"><input type="radio" name="waveAction" value="Calm"> Calm</label>
+            <label class="radio wA2"><input type="radio" name="waveAction" value="Choppy"> Choppy</label>
+            <label class="radio wA3"><input type="radio" name="waveAction" value="Hazardous"> Hazardous</label>
 
-            <label class="pHValue">pH Value: </label>
+            <label class="form-control pHValue">pH Value: </label>
             <label class="pH1"><input type="text" name="phValue" value=""></label>
 
-            <label class="iceThickness">Ice Thickness: </label>
+            <label class="form-control iceThickness">Ice Thickness: </label>
             <label class="iT1"><input type="text" name="iceThickness" value=""></label>
 
             <label class="iceQuality">Ice Quality: </label>
-            <label class="iT1"><input type="radio" name="iceQuality" value="Poor"> Poor</label>
-            <label class="iT2"><input type="radio" name="iceQuality" value="Normal"> Normal</label>
-            <label class="iT3"><input type="radio" name="iceQuality" value="Excellent"> Excellent</label>
+            <label class="radio iT1"><input type="radio" name="iceQuality" value="Poor"> Poor</label>
+            <label class="radio iT2"><input type="radio" name="iceQuality" value="Normal"> Normal</label>
+            <label class="radio iT3"><input type="radio" name="iceQuality" value="Excellent"> Excellent</label>
 
             <label class="conditionRamps">Condition of Ramps: </label>
-            <label class="cR1"><input type="radio" name="conditionRamps" value="open"> Open</label>
-            <label class="cR2"><input type="radio" name="conditionRamps" value="closed"> Closed</label>
-            <label class="cR3"><input type="radio" name="conditionRamps" value="absent"> Absent</label>
+            <label class="radio cR1"><input type="radio" name="conditionRamps" value="open"> Open</label>
+            <label class="radio cR2"><input type="radio" name="conditionRamps" value="closed"> Closed</label>
+            <label class="radio cR3"><input type="radio" name="conditionRamps" value="absent"> Absent</label>
 
             <label class="docks">Docks: </label>
-            <label class="d1"><input type="radio" name="docks" value="open"> Open</label>
-            <label class="d2"><input type="radio" name="docks" value="closed"> Closed</label>
-            <label class="d3"><input type="radio" name="docks" value="absent"> Absent</label>
+            <label class="radio d1"><input type="radio" name="docks" value="open"> Open</label>
+            <label class="radio d2"><input type="radio" name="docks" value="closed"> Closed</label>
+            <label class="radio d3"><input type="radio" name="docks" value="absent"> Absent</label>
 
             <label class="bathrooms">Bathrooms: </label>
-            <label class="b1"><input type="radio" name="bathrooms" value="open"> Open</label>
-            <label class="b2"><input type="radio" name="bathrooms" value="closed"> Closed</label>
-            <label class="b3"><input type="radio" name="bathrooms" value="absent"> Absent</label>
+            <label class="radio b1"><input type="radio" name="bathrooms" value="open"> Open</label>
+            <label class="radio b2"><input type="radio" name="bathrooms" value="closed"> Closed</label>
+            <label class="radio b3"><input type="radio" name="bathrooms" value="absent"> Absent</label>
 
-            <label class="fishKill">Fish Kill: </label>
+            <label class="checkbox fishKill">Fish Kill: </label>
             <label class="fK1"><input type="checkbox" name="fishKill" value="present"> Present</label>
 
-            <label class="fishDisease">Fish Disease/Deformities: </label>
+            <label class="checkbox fishDisease">Fish Disease/Deformities: </label>
             <label class="fD1"><input type="checkbox" name="fishDisease" value="present"> Present</label>
 
-            <label class="invasiveSpecies">Invasive Species: </label>
+            <label class="checkbox invasiveSpecies">Invasive Species: </label>
             <label class="iS1"><input type="checkbox" name="invasiveSpecies" value="present"> Present</label>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input type="submit" value="Upload Image" name="submit">
+                <button class="" id="submitButton" type="submit">Submit</button>
+                <button class="" id="Clear" type="submit">Clear Form</button>
         </div>
-        <div class="socialConditions">
-            <label class="noOfPeople">Number of People: </label>
-                <label class="bTAA1"><input type="text" name="noOfPeople" value="Number"></label>
 
-                <label class="NoOfBoats">Number of Boats: </label>
-                <label class="bNC"><input type="text" name="windSpeed" value="NoOfBoats"></label>
+        <div class "col-lg-4">
+            <h3>Social Conditions</h3>
+            <label class="form-control noOfPeople">Number of People: </label>
+            <label class="bTAA1"><input type="text" name="noOfPeople" value="Number"></label>
 
-                <label class="boatTrafficA">Boat Traffic: </label>
-                <label class="bTA1"><input type="radio" name="boatTraffic" value="light"> Light</label>
-                <label class="bTA2"><input type="radio" name="boatTraffic" value="medium"> Medium</label>
-                <label class="bTA3"><input type="radio" name="boatTraffic" value="heavy"> Heavy</label>
+            <label class="form-control NoOfBoats">Number of Boats: </label>
+            <label class="bNC"><input type="text" name="windSpeed" value="NoOfBoats"></label>
 
-                <label class="beachCrowd">Beach Crowd: </label>
-                <label class="bC1"><input type="radio" name="beachCrowd" value="light"> Light</label>
-                <label class="bC2"><input type="radio" name="beachCrowd" value="medium"> Medium</label>
-                <label class="bC3"><input type="radio" name="beachCrowd" value="heavy"> Heavy</label>
+            <label class="boatTrafficA">Boat Traffic: </label>
+            <label class="radio bTA1"><input type="radio" name="boatTraffic" value="light"> Light</label>
+            <label class="radio bTA2"><input type="radio" name="boatTraffic" value="medium"> Medium</label>
+            <label class="radio bTA3"><input type="radio" name="boatTraffic" value="heavy"> Heavy</label>
 
-                <label class="boatRTraffic">Boat Ramp Traffic: </label>
-                <label class="bRT1"><input type="radio" name="boatRTraffic" value="light"> Light</label>
-                <label class="bRT2"><input type="radio" name="boatRTraffic" value="medium"> Medium</label>
-                <label class="bRT3"><input type="radio" name="boatRTraffic" value="heavy"> Heavy</label>
+            <label class="beachCrowd">Beach Crowd: </label>
+            <label class="radio bC1"><input type="radio" name="beachCrowd" value="light"> Light</label>
+            <label class="radio bC2"><input type="radio" name="beachCrowd" value="medium"> Medium</label>
+            <label class="radio bC3"><input type="radio" name="beachCrowd" value="heavy"> Heavy</label>
 
-                <label class="poaching">Poaching: </label>
-                <label class="bT1"><input type="checkbox" name="poaching" value="present"> Present</label>
+            <label class="boatRTraffic">Boat Ramp Traffic: </label>
+            <label class="radio bRT1"><input type="radio" name="boatRTraffic" value="light"> Light</label>
+            <label class="radio bRT2"><input type="radio" name="boatRTraffic" value="medium"> Medium</label>
+            <label class="radio bRT3"><input type="radio" name="boatRTraffic" value="heavy"> Heavy</label>
 
-                <label class="illegalActivities">Illegal Activities: </label>
-                <label class="iA1"><input type="checkbox" name="illegalActivities" value="present"> Present</label>
+            <label class="checkbox poaching">Poaching: </label>
+            <label class="bT1"><input type="checkbox" name="poaching" value="present"> Present</label>
 
-                <label class="badBehaviour">Bad Boating Behaviour: </label>
-                <label class="bB1"><input type="checkbox" name="badBehaviour" value="present"> Present</label>
+            <label class="checkbox illegalActivities">Illegal Activities: </label>
+            <label class="iA1"><input type="checkbox" name="illegalActivities" value="present"> Present</label>
+
+            <label class="checkbox badBehaviour">Bad Boating Behaviour: </label>
+            <label class="bB1"><input type="checkbox" name="badBehaviour" value="present"> Present</label>
+            <button class="" id="submitButton" type="submit">Submit</button>
+            <button class="" id="Clear" type="submit">Clear Form</button>
         </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

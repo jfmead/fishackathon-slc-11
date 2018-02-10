@@ -1,13 +1,7 @@
-*{
-    margin: 0px;
-}
 body{
-    background-color: #212F2C;
+    background-color: white;
 }
-.wrap{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
+
 .banner{
     display: grid;
     background-image: url("banner.jpeg");
@@ -20,115 +14,20 @@ body{
 }
 
 .subBanner{
-    height: 40px;
+    height: 75px;
     color: white;
     background-color: #43BAB6;
-    grid-column-start: 3;
-    grid-column-end: -3;
     margin-top: 20px;
     padding:10px;
-    opacity: .5;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
 }
-.bottomSubBanner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 2;
-}
-.socialConditionsboatTraffic{
-    grid-column: 3/-3;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
-    grid-template-rows: repeat(6, 1fr);
+.bottomBanner{
+    height: 60px;
     color: white;
     background-color: #43BAB6;
-    padding: 20px;
-    opacity: .65;
-}
-.bottomSubBanner{
-    height: 100px;
-    grid-column: 3/-3;
-    color: white;
-    background-color: #43BAB6;
-    padding: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
-    opacity: .5;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    align-items: baseline;
-}
-.bTraffic{
-    font-weight: 700;
-    color: white;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-.bT1{
-    grid-column-start: 1;
-    grid-row-start: 2;
-
-}
-.bT2{
-    grid-column-start: 1;
-    grid-row-start: 3;
-
-}
-.bT3{
-    grid-column-start: 1;
-    grid-row-start: 4;
-}
-.beachCrowd{
-    font-weight: 700;
-    color: white;
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
-.bC1{
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-.bC2{
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-.bC3{
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-.boat-ramp{
-    font-weight: 700;
-    color: white;
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-.bR1{
-    grid-column-start: 3;
-    grid-row-start: 2;
-}
-.bR2{
-    grid-column-start: 3;
-    grid-row-start: 3;
-}
-.bR3{
-    grid-column-start: 3;
-    grid-row-start: 4;
-}
-.socialConditionsboatTraffic{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-}
-.bTraffic{
-
-}
-.feed{
-    color: white;
-    background-color: #212F2C;
-    grid-column-start: 3;
-    grid-column-end: -3;
     margin-top: 20px;
-    padding: 20px;
+    padding:10px;
+}
+
+.feed {
+    padding: 2%;
 }
