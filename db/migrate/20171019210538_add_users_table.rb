@@ -3,17 +3,8 @@ class AddUsersTable < ActiveRecord::Migration
         create_table :users do |u|
             u.string :email
             u.string :password
-
-            u.string :street_address
-            u.string :city
-            u.string :state
-            u.string :zip_code
-            
-            u.string :first_name
-            u.string :last_name
-            u.string :credit_card_number
-            u.string :expiration_date
-            u.string :cvv
+            u.string :username
+            u.string :reports, default: [], array: true
         end
     end
     

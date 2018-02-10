@@ -7,8 +7,8 @@ module SearchHelper
             true
         else
             # If an error occurs, set default to Oakland
-            @full_location = "Oakland, CA"
-            @curr_loc_lat = 37.8044 
+            @full_location = "Salt Lake City, Utah"
+            @curr_loc_lat = 40.7608
             @curr_loc_lng = 122.2711
             false
         end
