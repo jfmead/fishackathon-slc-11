@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fresh Water Feed</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <!-- <div class="wrap">
+        <div class="banner">
+            <div class="searchBarLakes"></div>
+            <div class="searchBarZip"></div>
+        </div>
+        <div class="subBanner">
+            <form name="search_cat_bar" method="get" action="#">
+                <table cellpadding="5">
+                    <tr>
+                        <td>
+                            <input type="text" name="dff_keyword" size="30" maxlength="30" placeholder="Lake/River Search">
+                            <input type="text" name="dff_keyword" size="10" maxlength="5" placeholder="Zip Code">
+                            <input type="submit" value="Find">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div> -->
+
+    <div class="environmentalConditions">
+        <div class="col-lg-8 col-sm-6">
+            <h3>Environmental Conditions</h3>
+            <label class="algaeBlooms">Algae Blooms: </label>
+            <label class="bT1"><input type="checkbox" name="algaeBlooms" value="present"> Present</label>
+
+            <label class="surfaceScum">Surface Scum: </label>
+            <label class="bT1"><input type="checkbox" name="surfaceScum" value="present"> Present</label>
+
+            <label class="garbageBuildup">Garbage Buildup: </label>
+            <label class="bT1"><input type="checkbox" name="garbageBuildup" value="present"> Present</label>
+
+            <label class="visiblePolutants">Visible Polutants: </label>
+            <label class="bT1"><input type="checkbox" name="visiblePolutants" value="present"> Present</label>
+
+            <label class="sulferSmells">Sulfer Based Smells: </label>
+            <label class="bT1"><input type="checkbox" name="sulferSmells" value="present"> Present</label>
+
+            <label class="otherSmells">Other Smells: </label>
+            <label class="bT1"><input type="checkbox" name="otherSmells" value="present"> Present</label>
+        </div>
+
+        <div class="col-lg-8 col-sm-6">
+            <h3>Biological Conditions</h3>
+
+            <label class="waterTemp">Water Temperature: </label>
+            <label class="bT1"><input type="text" name="waterTemp" value="Water Temp"></label>
+
+            <label class="windSpeed">Wind Speed: </label>
+            <label class="bT1"><input type="text" name="windSpeed" value="Wind Speed"></label>
+
+
+            <label class="waveAction">Wave Action: </label>
+            <label class="bT1"><input type="radio" name="waveAction" value="Calm"> Calm</label>
+            <label class="bT2"><input type="radio" name="waveAction" value="Choppy"> Choppy</label>
+            <label class="bT3"><input type="radio" name="waveAction" value="Hazardous"> Hazardous</label>
+
+            <label class="pHValue">pH Value: </label>
+            <label class="bT1"><input type="text" name="phValue" value="pH Value"></label>
+
+            <label class="iceThickness">Ice Thickness: </label>
+            <label class="bT1"><input type="text" name="iceThickness" value="Thickness"></label>
+
+            <label class="waveAction">Ice Quality: </label>
+            <label class="bT1"><input type="radio" name="waveAction" value="Poor"> Poor</label>
+            <label class="bT2"><input type="radio" name="waveAction" value="Normal"> Normal</label>
+            <label class="bT3"><input type="radio" name="waveAction" value="Excellent"> Excellent</label>
+
+            <label class="conditionRamps">Condition of Ramps: </label>
+            <label class="bT1"><input type="radio" name="conditionRamps" value="open"> Open</label>
+            <label class="bT2"><input type="radio" name="conditionRamps" value="closed"> Closed</label>
+            <label class="bT3"><input type="radio" name="conditionRamps" value="absent"> Absent</label>
+
+            <label class="docks">Docks: </label>
+            <label class="bT1"><input type="radio" name="docks" value="open"> Open</label>
+            <label class="bT2"><input type="radio" name="docks" value="closed"> Closed</label>
+            <label class="bT3"><input type="radio" name="docks" value="absent"> Absent</label>
+
+            <label class="bathrooms">Bathrooms: </label>
+            <label class="bT1"><input type="radio" name="bathrooms" value="open"> Open</label>
+            <label class="bT2"><input type="radio" name="bathrooms" value="closed"> Closed</label>
+            <label class="bT3"><input type="radio" name="bathrooms" value="absent"> Absent</label>
+
+            <label class="fishKill">Fish Kill: </label>
+            <label class="bT1"><input type="checkbox" name="fishKill" value="present"> Present</label>
+
+            <label class="fishDisease">Fish Disease/Deformities: </label>
+            <label class="bT1"><input type="checkbox" name="fishDisease" value="present"> Present</label>
+
+            <label class="invasiveSpecies">Invasive Species: </label>
+            <label class="bT1"><input type="checkbox" name="invasiveSpecies" value="present"> Present</label>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+            </form>
+        </div>
+
+        <div class="col-lg-8 col-sm-6">
+            <h3>Social Conditions</h3>
+
+        </div>
+    </div>
+</body>
+
+</html>
