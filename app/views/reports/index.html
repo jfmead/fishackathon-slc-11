@@ -8,10 +8,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="wrap">
     <div class="banner">
-        <div class="title">Fresh Water Feed</div>
         <div class="searchBarLakes"></div>
         <div class="searchBarZip"></div>
+    </div>
+    <div class="subBanner">
+        <form name="search_cat_bar" method="get" action="#">
+            <table cellpadding="5">
+                <tr>
+                    <td>
+                        <input type="text" name="dff_keyword" size="30" maxlength="30" placeholder="Lake/River Search">
+                        <input type="text" name="dff_keyword" size="10" maxlength="5" placeholder="Zip Code">
+                        <input type="submit" value="Find">
+                    </td>
+                </tr>
+            </table>
+            <div class="socialConditionsboatTraffic">
+                <label class="bTraffic">Boat Traffic: </label>
+                <label class="bT1"><input type="radio" name="boatTraffic" value="mild"> mild</label>
+                <label class="bT2"><input type="radio" name="boatTraffic" value="medium"> medium</label>
+                <label class="bT3"><input type="radio" name="boatTraffic" value="heavy"> heavy</label>
+                <label class="bCrowd">Beach Crowd: </label>
+                <label class="bC1"><input type="radio" name="beachCrowd" value="mild"> mild</label>
+                <label class="bC2"><input type="radio" name="beachCrowd" value="medium"> medium</label>
+                <label class="bC3"><input type="radio" name="beachCrowd" value="heavy"> heavy</label>
+                <label class="bRamp">Boat-Ramp Traffic: </label>
+                <label class="bR1"><input type="radio" name="boat-ramp" value="mild"> mild</label>
+                <label class="bR2"><input type="radio" name="boat-ramp" value="medium"> medium</label>
+                <label class="bR3"><input type="radio" name="boat-ramp" value="heavy"> heavy</label>
+            </div>
+        </form>
     </div>
     <div class="feed">
         <p>You can do anything your heart can imagine. There it is. You don't want to kill all your dark areas they are very important. Let all these little things happen. Don't fight them. Learn to use them.<br><br>
@@ -28,5 +55,6 @@ This piece of canvas is your world. Very easy to work these to death. But we're 
 
 It's a super day, so why not make a beautiful sky? We'll throw some old gray clouds in here just sneaking around and having fun. Everyone needs a friend. Friends are the most valuable things in the world. From all of us here, I want to wish you happy painting and God bless, my friends. Let your imagination be your guide. There are no mistakes. You can fix anything that happens.</p>
     </div>
+</div>
 </body>
 </html>
